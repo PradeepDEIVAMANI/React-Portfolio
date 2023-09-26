@@ -1,0 +1,44 @@
+/* App container styling */
+.App {
+  text-align: center;
+}
+
+/* Logo styling */
+.App-logo {
+  height: 40vmin; /* Set logo height relative to the viewport */
+  pointer-events: none; /* Disable pointer events on the logo */
+}
+
+/* Animation for the logo (conditionally based on user's preference for reduced motion) */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear; /* Rotate the logo */
+  }
+}
+
+/* Header styling */
+.App-header {
+  background-color: #282c34; /* Background color */
+  min-height: 100vh; /* Minimum height to fill the viewport */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin); /* Responsive font size based on viewport */
+  color: white; /* Text color */
+}
+
+/* Styling for links in the app */
+.App-link {
+  color: #61dafb; /* Link color */
+}
+
+/* Keyframes animation for spinning the logo */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); /* Start rotation from 0 degrees */
+  }
+  to {
+    transform: rotate(360deg); /* Rotate the logo to 360 degrees */
+  }
+}
